@@ -1,0 +1,57 @@
+:root {
+  --primary-color:#abcdff;
+  --secondary-color:#009688;
+  --size-radius:10px;
+  --main-line:2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.main_container {
+  width:100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.container {
+    width: 1100px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: light;
+  }
+}
+
+.theme {
+  transition: .3s linear;
+  min-height: 100vh;
+}
+
+.light {
+  background-color: #FFF;
+  color:#111;
+}
+
+.dark  {
+  background-color: #111;
+  color:#fff;
+}
