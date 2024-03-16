@@ -105,8 +105,8 @@ width: 100%;
   }
 }
 
-@media (min-width: 769px) and (max-width:991px) {
-.page_container {
+@media (min-width:769px) and (max-width:991px)  {
+  .page_container {
   width: 100%;
   margin: 0 auto;
   display: flex;

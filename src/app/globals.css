@@ -39,7 +39,7 @@ a {
 
 .theme {
   transition: .3s linear;
-  /* height:100vh; */
+  min-height:100vh;
 }
 
 .light {
@@ -51,3 +51,24 @@ a {
   background-color: #111;
   color:#fff;
 }
+
+
+
+
+@media (max-width:767px){
+  .container {
+    width: 100%;
+  }
+}
+
+/* @media (min-width:768px) and (max-width:991px){
+  .container {
+    width:100%;
+  }
+}
+
+@media (min-width:992px){
+  .container {
+    width: 1100px;
+  }
+} */

@@ -7,7 +7,8 @@ import DarkMode from "../DarkMode/DarkMode";
 
 const Navbar = () => {
   return (
-    <div className={styles.page_container} style={{padding:"30px 0"}}>
+    <div className="container">
+          <div className={styles.page_container} style={{padding:"30px 0"}}>
       <Logo />
       <ul className={styles.links}>
         {links.map((item, key) => (
@@ -19,6 +20,7 @@ const Navbar = () => {
         ))}
         <DarkMode />
       </ul>
+    </div>
     </div>
   );
 };

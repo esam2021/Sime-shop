@@ -7,20 +7,18 @@ export const metadata = {
   description: "Geting All Products From API ",
 };
 
-
 async function getData() {
-const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   if (!res.ok) {
-    throw new Error('Failed to fetch data')
+    throw new Error("Failed to fetch data");
   }
 
   return res.json();
 }
 
-
 const Products = async () => {
   const data = await getData();
-  console.log(data)
+  console.log(data);
 
   const productsJSX = data.map((product) => (
     <>
@@ -40,7 +38,7 @@ const Products = async () => {
             {product.title.length > 10
               ? product.title.slice(1, 10) + "..."
               : ""}
-           </Link>
+          </Link>
         </h2>
         <p className={styles.product_description}>{product.body}</p>
         {/* <p className={styles.product_price}>
@@ -50,13 +48,10 @@ const Products = async () => {
       </div>
     </>
   ));
-  
 
   return (
     <div className={styles.page_container}>
-      <div className={styles.products}>
-        {productsJSX}
-      </div>
+      <div className={styles.products}>{productsJSX}</div>
     </div>
   );
 };
