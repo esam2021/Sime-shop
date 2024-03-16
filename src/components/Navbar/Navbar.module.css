@@ -1,3 +1,12 @@
+.page_container{
+    width:100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 100px; */
+}
+
 .links {
     list-style-type: none;
     display: flex;
@@ -17,4 +26,17 @@
 
 .link:hover {
     background-color: var(--secondary-color);
+}
+
+@media (max-width:768px){
+    .page_container {
+        width: fit-content;
+        flex-direction: column;
+        justify-content:start;
+        align-items: start;
+    }
+
+    .links {
+        padding:20px;
+    }
 }

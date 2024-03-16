@@ -12,23 +12,19 @@ export const metadata = {
 export default function Home() {  
   return (
     <>
-      <div className={styles.container }>
+      <div className={styles.page_container}>
         <div className={styles.col}>
-          <h1 className={styles.title}>
-            Your Best e-commerce destination!
-          </h1>
+          <h1 className={styles.title}>Your Best e-commerce destination!</h1>
           <p className={styles.description}>
             on the internet. It is your bustling city center or brick-and-mortar
             shop translated into zeroes and ones on the internet superhighway.
           </p>
-          <Link href="/products" className={styles.link}> Shop Now </Link>
+          <Link href="/products" className={styles.link}>
+            Shop Now
+          </Link>
         </div>
         <div className={styles.col}>
-          <Image
-            src={Hero}
-            className={styles.image}
-            alt="image"
-          />
+          <Image src={Hero} className={styles.image} alt="image" />
         </div>
       </div>
     </>

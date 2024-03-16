@@ -3,6 +3,7 @@ import styles from "./Footer.module.css"
 import { social_media } from "./social_media";
 const Footer = () => {
   return (
+      <div className={styles.page_container}>
     <div className="container">
     <footer className={styles.footer}>
       <p>&copy; 2024 Alsamara. all rights reserved. </p>
@@ -12,6 +13,7 @@ const Footer = () => {
         ))}
       </div>
     </footer>
+    </div>
     </div>
   )
 }

@@ -53,7 +53,7 @@ const Products = async () => {
   
 
   return (
-    <div className="container">
+    <div className={styles.page_container}>
       <div className={styles.products}>
         {productsJSX}
       </div>
