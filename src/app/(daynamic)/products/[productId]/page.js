@@ -42,8 +42,6 @@ const Product = async ({params}) => {
         <div className={styles.product_discount}>
           <Image
             src={product.thumbnail}
-            width={400}
-            height={200}
             className={styles.product_image}
             alt={product.title}
           />
