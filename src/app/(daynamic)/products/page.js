@@ -35,7 +35,7 @@ const Products = async () => {
         <h2 className={styles.product_title}>
           <Link href={`/products/${product.id}`}>
             {product.title.length > 30
-              ? product.title.slice(1, 10) + "..."
+              ? product.title.slice(1, 20) + "..."
               : ""}
           </Link>
         </h2>

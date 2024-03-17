@@ -50,7 +50,7 @@ const Product = async ({params}) => {
           <sup className={styles.discount}> category </sup>
         </div>
         <h2 className={styles.product_title}>
-          <Link href={`/products/${product.id}`}>{product.title}</Link>
+          <Link href={`/products/${product.id}`}> {product.title}</Link>
         </h2>
         <p className={styles.product_description}>{product.description}</p>
         <p className={styles.product_price}>
