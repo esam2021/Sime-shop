@@ -37,7 +37,7 @@ const Products = async () => {
         </h2>
         <p className={styles.product_description}>
           {product.description.length > 20
-            ? product.title.slice(1, 60) + "..."
+            ? product.description.slice(1, 60) + "..."
             : ""}
         </p>
         <p className={styles.product_price}>
