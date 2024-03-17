@@ -34,7 +34,7 @@ const Products = async () => {
         </div>
         <h2 className={styles.product_title}>
           <Link href={`/products/${product.id}`}>
-            {product.title.length > 10
+            {product.title.length > 30
               ? product.title.slice(1, 10) + "..."
               : ""}
           </Link>
@@ -42,7 +42,7 @@ const Products = async () => {
         <p className={styles.product_description}>{product.body}</p>
         <p className={styles.product_price}>
           <span className={styles.price_word}> Price : </span>
-          <span className={styles.price}> 200 </span>
+          <span className={styles.price}> {product.price} </span>
         </p>
       </div>
     </>
