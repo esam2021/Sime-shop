@@ -24,13 +24,13 @@ const Products = async () => {
       <div className={styles.product}>
         <div className={styles.product_discount}>
           <Image
-            src={product.images[0]}
+            src={product.thumbnail}
             width={200}
             height={200}
             className={styles.product_image}
             alt=""
           />
-          <sup className={styles.discount}> {product.id} %</sup>
+          <sup className={styles.discount}> {product.category}</sup>
         </div>
         <h2 className={styles.product_title}>
           <Link href={`/products/${product.id}`}>
@@ -39,7 +39,7 @@ const Products = async () => {
               : ""}
           </Link>
         </h2>
-        <p className={styles.product_description}>{product.body}</p>
+        <p className={styles.product_description}>{product.description}</p>
         <p className={styles.product_price}>
           <span className={styles.price_word}> Price : </span>
           <span className={styles.price}> {product.price} </span>
