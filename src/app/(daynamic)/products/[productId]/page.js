@@ -42,12 +42,12 @@ const Product = async ({params}) => {
         <div className={styles.product_discount}>
           <Image
             src={product.thumbnail}
-            width={800}
-            height={400}
+            width={400}
+            height={200}
             className={styles.product_image}
             alt={product.title}
           />
-          <sup className={styles.discount}> category </sup>
+          <sup className={styles.discount}> {product.category} </sup>
         </div>
         <h2 className={styles.product_title}>
             {product.title}
