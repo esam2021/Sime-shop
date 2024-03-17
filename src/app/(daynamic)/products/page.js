@@ -33,13 +33,13 @@ const Products = async () => {
           <sup className={styles.discount}> {product.category}</sup>
         </div>
         <h2 className={styles.product_title}>
-          <Link href={`/products/${product.id}`}>
-            {product.title.length > 30
-              ? product.title.slice(1, 20) + "..."
-              : ""}
-          </Link>
+          <Link href={`/products/${product.id}`}>{product.title}</Link>
         </h2>
-        <p className={styles.product_description}>{product.description}</p>
+        <p className={styles.product_description}>
+          {product.description.length > 30
+            ? product.title.slice(1, 30) + "..."
+            : ""}
+        </p>
         <p className={styles.product_price}>
           <span className={styles.price_word}> Price : </span>
           <span className={styles.price}> {product.price} </span>
